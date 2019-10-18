@@ -1,0 +1,765 @@
+2019-10-08 00:38:54.216  INFO 19050 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Starting MyblogApplication on Yufeis-MBP with PID 19050 (/Users/yufei/IdeaProjects/myblog/target/classes started by yufei in /Users/yufei/IdeaProjects/myblog)
+2019-10-08 00:38:54.222 DEBUG 19050 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-08 00:38:54.222  INFO 19050 --- [restartedMain] com.yufei.myblog.MyblogApplication       : The following profiles are active: dev
+2019-10-08 00:38:54.272  INFO 19050 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-08 00:38:54.272  INFO 19050 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-08 00:38:54.852  INFO 19050 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-08 00:38:54.872  INFO 19050 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-10-08 00:38:55.156  INFO 19050 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7d1fc7fd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-08 00:38:55.453  INFO 19050 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-08 00:38:55.477  INFO 19050 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-08 00:38:55.478  INFO 19050 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-08 00:38:55.573  INFO 19050 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-08 00:38:55.573  INFO 19050 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1300 ms
+2019-10-08 00:38:55.725  INFO 19050 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-08 00:38:56.204  INFO 19050 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-08 00:38:56.263  INFO 19050 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-08 00:38:56.337  INFO 19050 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.12.Final}
+2019-10-08 00:38:56.338  INFO 19050 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-08 00:38:56.489  INFO 19050 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-08 00:38:56.632  INFO 19050 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-08 00:38:56.927  INFO 19050 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-08 00:38:56.966  INFO 19050 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-08 00:38:57.161  INFO 19050 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-08 00:38:57.204  WARN 19050 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-08 00:38:57.420  INFO 19050 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-08 00:38:57.423  INFO 19050 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Started MyblogApplication in 3.67 seconds (JVM running for 4.223)
+2019-10-08 00:39:08.169  INFO 19050 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-08 00:39:08.169  INFO 19050 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-08 00:39:08.177  INFO 19050 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-10-08 00:39:08.272 ERROR 19050 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArithmeticException: / by zero] with root cause
+
+java.lang.ArithmeticException: / by zero
+	at com.yufei.myblog.web.IndexController.index(IndexController.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:798)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-10-08 00:40:43.017  INFO 19050 --- [Thread-15] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-08 00:40:43.017  INFO 19050 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-08 00:40:43.024  INFO 19050 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-08 00:40:43.029  INFO 19050 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-08 00:40:45.907  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Starting MyblogApplication on Yufeis-MBP with PID 19054 (/Users/yufei/IdeaProjects/myblog/target/classes started by yufei in /Users/yufei/IdeaProjects/myblog)
+2019-10-08 00:40:45.908 DEBUG 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-08 00:40:45.909  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : The following profiles are active: dev
+2019-10-08 00:40:45.973  INFO 19054 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-08 00:40:45.973  INFO 19054 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-08 00:40:46.410  INFO 19054 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-08 00:40:46.424  INFO 19054 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2019-10-08 00:40:46.671  INFO 19054 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$67f84645] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-08 00:40:46.896  INFO 19054 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-08 00:40:46.913  INFO 19054 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-08 00:40:46.913  INFO 19054 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-08 00:40:46.984  INFO 19054 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-08 00:40:46.984  INFO 19054 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1011 ms
+2019-10-08 00:40:47.080  INFO 19054 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-08 00:40:47.362  INFO 19054 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-08 00:40:47.390  INFO 19054 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-08 00:40:47.423  INFO 19054 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.12.Final}
+2019-10-08 00:40:47.424  INFO 19054 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-08 00:40:47.500  INFO 19054 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-08 00:40:47.574  INFO 19054 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-08 00:40:47.723  INFO 19054 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-08 00:40:47.751  INFO 19054 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-08 00:40:47.885  INFO 19054 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-08 00:40:47.914  WARN 19054 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-08 00:40:48.070  INFO 19054 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-08 00:40:48.073  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Started MyblogApplication in 2.498 seconds (JVM running for 2.953)
+2019-10-08 00:40:53.038  INFO 19054 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-08 00:40:53.039  INFO 19054 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-08 00:40:53.044  INFO 19054 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2019-10-08 00:42:48.338  INFO 19054 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-08 00:42:48.339  INFO 19054 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-08 00:42:48.342  INFO 19054 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-08 00:42:48.345  INFO 19054 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-08 00:42:48.533  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Starting MyblogApplication on Yufeis-MBP with PID 19054 (/Users/yufei/IdeaProjects/myblog/target/classes started by yufei in /Users/yufei/IdeaProjects/myblog)
+2019-10-08 00:42:48.533 DEBUG 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-08 00:42:48.533  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : The following profiles are active: dev
+2019-10-08 00:42:48.649  INFO 19054 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-08 00:42:48.651  INFO 19054 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
+2019-10-08 00:42:48.682  INFO 19054 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$67f84645] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-08 00:42:48.727  INFO 19054 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-08 00:42:48.728  INFO 19054 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-08 00:42:48.728  INFO 19054 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-08 00:42:48.735  INFO 19054 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-08 00:42:48.736  INFO 19054 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 201 ms
+2019-10-08 00:42:48.771  INFO 19054 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2019-10-08 00:42:48.779  INFO 19054 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2019-10-08 00:42:48.782  INFO 19054 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-08 00:42:48.786  INFO 19054 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-08 00:42:48.798  INFO 19054 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-08 00:42:48.808  INFO 19054 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-08 00:42:48.859  INFO 19054 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-08 00:42:48.865  WARN 19054 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-08 00:42:48.923  INFO 19054 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-08 00:42:48.924  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Started MyblogApplication in 0.447 seconds (JVM running for 123.805)
+2019-10-08 00:42:48.926  INFO 19054 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-08 00:42:51.251  INFO 19054 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-08 00:42:51.252  INFO 19054 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-08 00:42:51.259  INFO 19054 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-10-08 00:42:51.268 ERROR 19054 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArithmeticException: / by zero] with root cause
+
+java.lang.ArithmeticException: / by zero
+	at com.yufei.myblog.web.IndexController.index(IndexController.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:798)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-10-08 00:47:48.799 ERROR 19054 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArithmeticException: / by zero] with root cause
+
+java.lang.ArithmeticException: / by zero
+	at com.yufei.myblog.web.IndexController.index(IndexController.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:798)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-10-08 00:47:53.657  WARN 19054 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=4m34s717ms).
+2019-10-08 00:48:01.828  INFO 19054 --- [Thread-18] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-08 00:48:01.829  INFO 19054 --- [Thread-18] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-08 00:48:01.830  INFO 19054 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2019-10-08 00:48:01.838  INFO 19054 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2019-10-08 00:48:02.094  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Starting MyblogApplication on Yufeis-MBP with PID 19054 (/Users/yufei/IdeaProjects/myblog/target/classes started by yufei in /Users/yufei/IdeaProjects/myblog)
+2019-10-08 00:48:02.094 DEBUG 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-08 00:48:02.094  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : The following profiles are active: dev
+2019-10-08 00:48:02.263  INFO 19054 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-08 00:48:02.264  INFO 19054 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
+2019-10-08 00:48:02.299  INFO 19054 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$67f84645] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-08 00:48:02.388  INFO 19054 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-08 00:48:02.389  INFO 19054 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-08 00:48:02.389  INFO 19054 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-08 00:48:02.395  INFO 19054 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-08 00:48:02.395  INFO 19054 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 299 ms
+2019-10-08 00:48:02.430  INFO 19054 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2019-10-08 00:48:02.442  INFO 19054 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2019-10-08 00:48:02.445  INFO 19054 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-08 00:48:02.449  INFO 19054 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-08 00:48:02.473  INFO 19054 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-08 00:48:02.487  INFO 19054 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-08 00:48:02.575  INFO 19054 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-08 00:48:02.583  WARN 19054 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-08 00:48:02.644  INFO 19054 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-08 00:48:02.645  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Started MyblogApplication in 0.617 seconds (JVM running for 192.765)
+2019-10-08 00:48:02.646  INFO 19054 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-08 00:48:05.709  INFO 19054 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-08 00:48:05.709  INFO 19054 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-08 00:48:05.715  INFO 19054 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-10-08 00:54:19.681  INFO 19054 --- [Thread-24] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-08 00:54:19.682  INFO 19054 --- [Thread-24] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-08 00:54:19.683  INFO 19054 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2019-10-08 00:54:19.691  INFO 19054 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2019-10-08 00:54:19.915  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Starting MyblogApplication on Yufeis-MBP with PID 19054 (/Users/yufei/IdeaProjects/myblog/target/classes started by yufei in /Users/yufei/IdeaProjects/myblog)
+2019-10-08 00:54:19.915 DEBUG 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-08 00:54:19.915  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : The following profiles are active: dev
+2019-10-08 00:54:20.027  INFO 19054 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-08 00:54:20.028  INFO 19054 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
+2019-10-08 00:54:20.054  INFO 19054 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$67f84645] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-08 00:54:20.094  INFO 19054 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-08 00:54:20.095  INFO 19054 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-08 00:54:20.095  INFO 19054 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-08 00:54:20.100  INFO 19054 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-08 00:54:20.100  INFO 19054 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 184 ms
+2019-10-08 00:54:20.133  INFO 19054 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2019-10-08 00:54:20.141  INFO 19054 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2019-10-08 00:54:20.144  INFO 19054 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-08 00:54:20.148  INFO 19054 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-08 00:54:20.160  INFO 19054 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-08 00:54:20.169  INFO 19054 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-08 00:54:20.214  INFO 19054 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-08 00:54:20.218  WARN 19054 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-08 00:54:20.228  INFO 19054 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [resources/index.html]
+2019-10-08 00:54:20.273  INFO 19054 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-08 00:54:20.274  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Started MyblogApplication in 0.415 seconds (JVM running for 570.407)
+2019-10-08 00:54:20.275  INFO 19054 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-08 00:54:24.671  INFO 19054 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-08 00:54:24.672  INFO 19054 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-08 00:54:24.677  INFO 19054 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2019-10-08 00:54:24.682 ERROR 19054 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArithmeticException: / by zero] with root cause
+
+java.lang.ArithmeticException: / by zero
+	at com.yufei.myblog.web.IndexController.index(IndexController.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:798)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-10-08 00:59:21.020 ERROR 19054 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArithmeticException: / by zero] with root cause
+
+java.lang.ArithmeticException: / by zero
+	at com.yufei.myblog.web.IndexController.index(IndexController.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:798)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-10-08 00:59:30.479  INFO 19054 --- [Thread-30] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-08 00:59:30.480  INFO 19054 --- [Thread-30] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-08 00:59:30.481  INFO 19054 --- [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2019-10-08 00:59:30.489  INFO 19054 --- [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2019-10-08 00:59:30.660  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Starting MyblogApplication on Yufeis-MBP with PID 19054 (/Users/yufei/IdeaProjects/myblog/target/classes started by yufei in /Users/yufei/IdeaProjects/myblog)
+2019-10-08 00:59:30.660 DEBUG 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-08 00:59:30.660  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : The following profiles are active: dev
+2019-10-08 00:59:30.783  INFO 19054 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-08 00:59:30.784  INFO 19054 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
+2019-10-08 00:59:30.812  INFO 19054 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$67f84645] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-08 00:59:30.852  INFO 19054 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-08 00:59:30.853  INFO 19054 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-08 00:59:30.853  INFO 19054 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-08 00:59:30.863  INFO 19054 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-08 00:59:30.864  INFO 19054 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 202 ms
+2019-10-08 00:59:30.895  INFO 19054 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2019-10-08 00:59:30.904  INFO 19054 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2019-10-08 00:59:30.906  INFO 19054 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-08 00:59:30.910  INFO 19054 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-08 00:59:30.925  INFO 19054 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-08 00:59:30.933  INFO 19054 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-08 00:59:30.977  INFO 19054 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-08 00:59:30.981  WARN 19054 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-08 00:59:31.039  INFO 19054 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-08 00:59:31.039  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Started MyblogApplication in 0.442 seconds (JVM running for 881.175)
+2019-10-08 00:59:31.041  INFO 19054 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-08 00:59:33.262  INFO 19054 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-08 00:59:33.263  INFO 19054 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-08 00:59:33.267  INFO 19054 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2019-10-08 00:59:57.594  INFO 19054 --- [Thread-36] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-08 00:59:57.594  INFO 19054 --- [Thread-36] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-08 00:59:57.595  INFO 19054 --- [Thread-36] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2019-10-08 00:59:57.602  INFO 19054 --- [Thread-36] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2019-10-08 00:59:57.721  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Starting MyblogApplication on Yufeis-MBP with PID 19054 (/Users/yufei/IdeaProjects/myblog/target/classes started by yufei in /Users/yufei/IdeaProjects/myblog)
+2019-10-08 00:59:57.722 DEBUG 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-08 00:59:57.722  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : The following profiles are active: dev
+2019-10-08 00:59:57.863  INFO 19054 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-08 00:59:57.864  INFO 19054 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
+2019-10-08 00:59:57.900  INFO 19054 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$67f84645] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-08 00:59:57.946  INFO 19054 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-08 00:59:57.946  INFO 19054 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-08 00:59:57.947  INFO 19054 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-08 00:59:57.952  INFO 19054 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-08 00:59:57.952  INFO 19054 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 229 ms
+2019-10-08 00:59:57.985  INFO 19054 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2019-10-08 00:59:57.992  INFO 19054 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2019-10-08 00:59:57.996  INFO 19054 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-08 00:59:58.000  INFO 19054 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-08 00:59:58.011  INFO 19054 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-08 00:59:58.023  INFO 19054 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-08 00:59:58.077  INFO 19054 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-08 00:59:58.083  WARN 19054 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-08 00:59:58.147  INFO 19054 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-08 00:59:58.147  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Started MyblogApplication in 0.458 seconds (JVM running for 908.284)
+2019-10-08 00:59:58.149  INFO 19054 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-08 01:00:00.173  INFO 19054 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-08 01:00:00.173  INFO 19054 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-08 01:00:00.177  INFO 19054 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2019-10-08 01:01:14.113  INFO 19054 --- [Thread-42] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-08 01:01:14.113  INFO 19054 --- [Thread-42] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-08 01:01:14.114  INFO 19054 --- [Thread-42] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2019-10-08 01:01:14.120  INFO 19054 --- [Thread-42] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2019-10-08 01:01:14.291  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Starting MyblogApplication on Yufeis-MBP with PID 19054 (/Users/yufei/IdeaProjects/myblog/target/classes started by yufei in /Users/yufei/IdeaProjects/myblog)
+2019-10-08 01:01:14.292 DEBUG 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-08 01:01:14.292  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : The following profiles are active: dev
+2019-10-08 01:01:14.414  INFO 19054 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-08 01:01:14.415  INFO 19054 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
+2019-10-08 01:01:14.445  INFO 19054 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$67f84645] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-08 01:01:14.483  INFO 19054 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-08 01:01:14.484  INFO 19054 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-08 01:01:14.484  INFO 19054 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-08 01:01:14.488  INFO 19054 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-08 01:01:14.488  INFO 19054 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 195 ms
+2019-10-08 01:01:14.519  INFO 19054 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2019-10-08 01:01:14.528  INFO 19054 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2019-10-08 01:01:14.530  INFO 19054 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-08 01:01:14.534  INFO 19054 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-08 01:01:14.545  INFO 19054 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-08 01:01:14.554  INFO 19054 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-08 01:01:14.597  INFO 19054 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-08 01:01:14.601  WARN 19054 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-08 01:01:14.660  INFO 19054 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-08 01:01:14.660  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Started MyblogApplication in 0.424 seconds (JVM running for 984.798)
+2019-10-08 01:01:14.663  INFO 19054 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-08 01:01:20.788  INFO 19054 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-08 01:01:20.789  INFO 19054 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-08 01:01:20.792  INFO 19054 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2019-10-08 01:02:10.471  INFO 19054 --- [Thread-48] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-08 01:02:10.471  INFO 19054 --- [Thread-48] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-08 01:02:10.471  INFO 19054 --- [Thread-48] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2019-10-08 01:02:10.477  INFO 19054 --- [Thread-48] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2019-10-08 01:02:10.591  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Starting MyblogApplication on Yufeis-MBP with PID 19054 (/Users/yufei/IdeaProjects/myblog/target/classes started by yufei in /Users/yufei/IdeaProjects/myblog)
+2019-10-08 01:02:10.592 DEBUG 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-08 01:02:10.592  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : The following profiles are active: dev
+2019-10-08 01:02:10.709  INFO 19054 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-08 01:02:10.711  INFO 19054 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
+2019-10-08 01:02:10.743  INFO 19054 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$67f84645] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-08 01:02:10.790  INFO 19054 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-08 01:02:10.791  INFO 19054 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-08 01:02:10.791  INFO 19054 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-08 01:02:10.801  INFO 19054 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-08 01:02:10.801  INFO 19054 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 208 ms
+2019-10-08 01:02:10.832  INFO 19054 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2019-10-08 01:02:10.841  INFO 19054 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2019-10-08 01:02:10.844  INFO 19054 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-08 01:02:10.847  INFO 19054 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-08 01:02:10.858  INFO 19054 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-08 01:02:10.868  INFO 19054 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-08 01:02:10.921  INFO 19054 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-08 01:02:10.926  WARN 19054 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-08 01:02:10.937  INFO 19054 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [resources/index.html]
+2019-10-08 01:02:10.998  INFO 19054 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-08 01:02:10.999  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Started MyblogApplication in 0.439 seconds (JVM running for 1041.137)
+2019-10-08 01:02:11.001  INFO 19054 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-08 01:02:13.454  INFO 19054 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-08 01:02:13.455  INFO 19054 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-08 01:02:13.459  INFO 19054 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2019-10-08 01:04:05.204  INFO 19054 --- [Thread-54] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-08 01:04:05.205  INFO 19054 --- [Thread-54] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-08 01:04:05.206  INFO 19054 --- [Thread-54] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2019-10-08 01:04:05.210  INFO 19054 --- [Thread-54] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2019-10-08 01:04:05.383  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Starting MyblogApplication on Yufeis-MBP with PID 19054 (/Users/yufei/IdeaProjects/myblog/target/classes started by yufei in /Users/yufei/IdeaProjects/myblog)
+2019-10-08 01:04:05.384 DEBUG 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-08 01:04:05.384  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : The following profiles are active: dev
+2019-10-08 01:04:05.518  INFO 19054 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-08 01:04:05.520  INFO 19054 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 repository interfaces.
+2019-10-08 01:04:05.548  INFO 19054 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$67f84645] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-08 01:04:05.588  INFO 19054 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-08 01:04:05.589  INFO 19054 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-08 01:04:05.589  INFO 19054 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-08 01:04:05.596  INFO 19054 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-08 01:04:05.596  INFO 19054 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 211 ms
+2019-10-08 01:04:05.627  INFO 19054 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2019-10-08 01:04:05.635  INFO 19054 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2019-10-08 01:04:05.638  INFO 19054 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-08 01:04:05.641  INFO 19054 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-08 01:04:05.651  INFO 19054 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-08 01:04:05.661  INFO 19054 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-08 01:04:05.705  INFO 19054 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-08 01:04:05.710  WARN 19054 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-08 01:04:05.717  INFO 19054 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-10-08 01:04:05.765  INFO 19054 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-08 01:04:05.766  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Started MyblogApplication in 0.428 seconds (JVM running for 1155.905)
+2019-10-08 01:04:05.767  INFO 19054 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-08 01:04:07.862  INFO 19054 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-08 01:04:07.863  INFO 19054 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-08 01:04:07.867  INFO 19054 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2019-10-08 01:12:02.315  WARN 19054 --- [HikariPool-9 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Thread starvation or clock leap detected (housekeeper delta=7m26s558ms).
+2019-10-08 01:12:08.307  INFO 19054 --- [Thread-60] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-08 01:12:08.307  INFO 19054 --- [Thread-60] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-08 01:12:08.308  INFO 19054 --- [Thread-60] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2019-10-08 01:12:08.315  INFO 19054 --- [Thread-60] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2019-10-08 01:12:08.444  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Starting MyblogApplication on Yufeis-MBP with PID 19054 (/Users/yufei/IdeaProjects/myblog/target/classes started by yufei in /Users/yufei/IdeaProjects/myblog)
+2019-10-08 01:12:08.444 DEBUG 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-08 01:12:08.444  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : The following profiles are active: dev
+2019-10-08 01:12:08.572  INFO 19054 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-08 01:12:08.574  INFO 19054 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
+2019-10-08 01:12:08.600  INFO 19054 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$67f84645] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-08 01:12:08.647  INFO 19054 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-08 01:12:08.648  INFO 19054 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-08 01:12:08.648  INFO 19054 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-08 01:12:08.652  INFO 19054 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-08 01:12:08.652  INFO 19054 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 206 ms
+2019-10-08 01:12:08.685  INFO 19054 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2019-10-08 01:12:08.694  INFO 19054 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2019-10-08 01:12:08.697  INFO 19054 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-08 01:12:08.700  INFO 19054 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-08 01:12:08.714  INFO 19054 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-08 01:12:08.725  INFO 19054 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-08 01:12:08.779  INFO 19054 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-08 01:12:08.785  WARN 19054 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-08 01:12:08.798  INFO 19054 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2019-10-08 01:12:08.859  INFO 19054 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-08 01:12:08.859  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Started MyblogApplication in 0.46 seconds (JVM running for 1222.43)
+2019-10-08 01:12:08.861  INFO 19054 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-08 01:12:23.386  INFO 19054 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-08 01:12:23.392  INFO 19054 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-08 01:12:23.399  INFO 19054 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-10-08 01:14:08.526  INFO 19054 --- [Thread-66] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-08 01:14:08.527  INFO 19054 --- [Thread-66] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-08 01:14:08.527  INFO 19054 --- [Thread-66] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2019-10-08 01:14:08.534  INFO 19054 --- [Thread-66] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2019-10-08 01:14:08.666  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Starting MyblogApplication on Yufeis-MBP with PID 19054 (/Users/yufei/IdeaProjects/myblog/target/classes started by yufei in /Users/yufei/IdeaProjects/myblog)
+2019-10-08 01:14:08.666 DEBUG 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-08 01:14:08.666  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : The following profiles are active: dev
+2019-10-08 01:14:08.763  INFO 19054 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-08 01:14:08.765  INFO 19054 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
+2019-10-08 01:14:08.789  INFO 19054 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$67f84645] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-08 01:14:08.826  INFO 19054 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-08 01:14:08.827  INFO 19054 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-08 01:14:08.827  INFO 19054 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-08 01:14:08.831  INFO 19054 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-08 01:14:08.831  INFO 19054 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 163 ms
+2019-10-08 01:14:08.860  INFO 19054 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2019-10-08 01:14:08.868  INFO 19054 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2019-10-08 01:14:08.870  INFO 19054 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-08 01:14:08.874  INFO 19054 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-08 01:14:08.883  INFO 19054 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-08 01:14:08.892  INFO 19054 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-08 01:14:08.943  INFO 19054 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-08 01:14:08.948  WARN 19054 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-08 01:14:08.958  INFO 19054 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2019-10-08 01:14:09.006  INFO 19054 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-08 01:14:09.006  INFO 19054 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Started MyblogApplication in 0.399 seconds (JVM running for 1342.583)
+2019-10-08 01:14:09.008  INFO 19054 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-08 01:14:10.540  INFO 19054 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-08 01:14:10.541  INFO 19054 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-08 01:14:10.544  INFO 19054 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2019-10-08 05:15:35.732  WARN 19054 --- [HikariPool-11 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Thread starvation or clock leap detected (housekeeper delta=4h26s749ms).
+2019-10-08 09:16:06.297  WARN 19054 --- [HikariPool-11 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Thread starvation or clock leap detected (housekeeper delta=4h30s552ms).
+2019-10-08 09:47:42.273  WARN 19054 --- [HikariPool-11 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Thread starvation or clock leap detected (housekeeper delta=31m35s987ms).
+2019-10-08 10:23:25.360  WARN 19054 --- [HikariPool-11 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Thread starvation or clock leap detected (housekeeper delta=35m13s90ms).
+2019-10-08 11:21:30.339  WARN 19054 --- [HikariPool-11 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Thread starvation or clock leap detected (housekeeper delta=57m34s977ms).
+2019-10-08 11:44:17.413  WARN 19054 --- [HikariPool-11 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Thread starvation or clock leap detected (housekeeper delta=22m47s74ms).
+2019-10-08 11:48:02.848  WARN 19054 --- [HikariPool-11 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Thread starvation or clock leap detected (housekeeper delta=3m45s434ms).
+2019-10-08 12:01:53.350  WARN 19054 --- [HikariPool-11 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Thread starvation or clock leap detected (housekeeper delta=13m20s486ms).
+2019-10-08 12:22:36.383  WARN 19054 --- [HikariPool-11 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Thread starvation or clock leap detected (housekeeper delta=20m13s22ms).
+2019-10-08 12:22:49.015  INFO 19054 --- [Thread-77] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-08 12:22:49.019  INFO 19054 --- [Thread-77] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-08 12:22:49.032  INFO 19054 --- [Thread-77] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2019-10-08 12:22:49.105  INFO 19054 --- [Thread-77] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2019-10-08 12:23:34.336  INFO 19225 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Starting MyblogApplication on campus-101-190.ucdavis.edu with PID 19225 (/Users/yufei/IdeaProjects/myblog/target/classes started by yufei in /Users/yufei/IdeaProjects/myblog)
+2019-10-08 12:23:34.339 DEBUG 19225 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-08 12:23:34.339  INFO 19225 --- [restartedMain] com.yufei.myblog.MyblogApplication       : The following profiles are active: dev
+2019-10-08 12:23:34.413  INFO 19225 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-08 12:23:34.413  INFO 19225 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-08 12:23:34.950  INFO 19225 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-08 12:23:34.968  INFO 19225 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-10-08 12:23:35.251  INFO 19225 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$22b2dbfa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-08 12:23:35.559  INFO 19225 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-08 12:23:35.581  INFO 19225 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-08 12:23:35.582  INFO 19225 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-08 12:23:35.672  INFO 19225 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-08 12:23:35.672  INFO 19225 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1259 ms
+2019-10-08 12:23:35.819  INFO 19225 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-08 12:23:36.248  INFO 19225 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-08 12:23:36.307  INFO 19225 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-08 12:23:36.383  INFO 19225 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.12.Final}
+2019-10-08 12:23:36.385  INFO 19225 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-08 12:23:36.532  INFO 19225 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-08 12:23:36.642  INFO 19225 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-08 12:23:36.878  INFO 19225 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-08 12:23:36.920  INFO 19225 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-08 12:23:37.125  INFO 19225 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-08 12:23:37.167  WARN 19225 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-08 12:23:37.379  INFO 19225 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-08 12:23:37.383  INFO 19225 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Started MyblogApplication in 3.561 seconds (JVM running for 4.224)
+2019-10-08 12:24:06.065  INFO 19225 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-08 12:24:06.065  INFO 19225 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-08 12:24:06.075  INFO 19225 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-10-08 12:25:52.038  INFO 19225 --- [Thread-10] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-08 12:25:52.039  INFO 19225 --- [Thread-10] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-08 12:25:52.043  INFO 19225 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-08 12:25:52.046  INFO 19225 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-08 12:25:52.219  INFO 19225 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Starting MyblogApplication on campus-101-190.ucdavis.edu with PID 19225 (/Users/yufei/IdeaProjects/myblog/target/classes started by yufei in /Users/yufei/IdeaProjects/myblog)
+2019-10-08 12:25:52.219 DEBUG 19225 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-08 12:25:52.219  INFO 19225 --- [restartedMain] com.yufei.myblog.MyblogApplication       : The following profiles are active: dev
+2019-10-08 12:25:52.387  INFO 19225 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-08 12:25:52.389  INFO 19225 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
+2019-10-08 12:25:52.431  INFO 19225 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$22b2dbfa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-08 12:25:52.493  INFO 19225 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-08 12:25:52.494  INFO 19225 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-08 12:25:52.494  INFO 19225 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-08 12:25:52.505  INFO 19225 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-08 12:25:52.505  INFO 19225 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 284 ms
+2019-10-08 12:25:52.558  INFO 19225 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2019-10-08 12:25:52.567  INFO 19225 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2019-10-08 12:25:52.571  INFO 19225 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-08 12:25:52.576  INFO 19225 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-08 12:25:52.598  INFO 19225 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-08 12:25:52.616  INFO 19225 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-08 12:25:52.701  INFO 19225 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-08 12:25:52.707  WARN 19225 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-08 12:25:52.719  INFO 19225 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [resources/index.html]
+2019-10-08 12:25:52.773  INFO 19225 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-08 12:25:52.773  INFO 19225 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Started MyblogApplication in 0.583 seconds (JVM running for 139.618)
+2019-10-08 12:25:52.776  INFO 19225 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-08 12:25:55.398  INFO 19225 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-08 12:25:55.399  INFO 19225 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-08 12:25:55.406  INFO 19225 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-10-08 13:34:24.709  WARN 19225 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=3m31s517ms).
+2019-10-08 13:35:41.031  WARN 19225 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1m16s337ms).
+2019-10-08 13:38:58.450  WARN 19225 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=3m17s419ms).
+2019-10-08 13:45:07.029  WARN 19225 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m38s573ms).
+2019-10-08 13:50:54.166  WARN 19225 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m47s138ms).
+2019-10-08 13:53:42.445  WARN 19225 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=2m48s279ms).
+2019-10-08 13:54:49.062  WARN 19225 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1m6s617ms).
+2019-10-08 14:06:35.880  WARN 19225 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=11m46s818ms).
+2019-10-08 18:06:51.366  WARN 19225 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=4h15s486ms).
+2019-10-08 22:07:20.363  WARN 19225 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=4h28s997ms).
+2019-10-08 22:14:08.407  WARN 19225 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=6m48s44ms).

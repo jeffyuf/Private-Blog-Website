@@ -1,0 +1,275 @@
+2019-10-17 01:26:52.108  INFO 87625 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Starting MyblogApplication on Yufeis-MBP with PID 87625 (/Users/yufei/IdeaProjects/myblog/target/classes started by yufei in /Users/yufei/IdeaProjects/myblog)
+2019-10-17 01:26:52.112 DEBUG 87625 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-17 01:26:52.112  INFO 87625 --- [restartedMain] com.yufei.myblog.MyblogApplication       : The following profiles are active: dev
+2019-10-17 01:26:52.188  INFO 87625 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-17 01:26:52.188  INFO 87625 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-17 01:26:52.772  INFO 87625 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-17 01:26:52.795  INFO 87625 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+2019-10-17 01:26:53.138  INFO 87625 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$458ce31] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 01:26:53.750  INFO 87625 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-17 01:26:53.784  INFO 87625 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-17 01:26:53.785  INFO 87625 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-17 01:26:53.918  INFO 87625 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-17 01:26:53.919  INFO 87625 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1731 ms
+2019-10-17 01:26:54.184  INFO 87625 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-17 01:26:54.625  INFO 87625 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-17 01:26:54.705  INFO 87625 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-17 01:26:54.789  INFO 87625 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.12.Final}
+2019-10-17 01:26:54.790  INFO 87625 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-17 01:26:54.953  INFO 87625 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-17 01:26:55.072  INFO 87625 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-17 01:26:55.291  INFO 87625 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 01:26:55.355  INFO 87625 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-17 01:26:55.782  INFO 87625 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-17 01:26:55.836  WARN 87625 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-17 01:26:56.177  INFO 87625 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-17 01:26:56.180  INFO 87625 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Started MyblogApplication in 4.545 seconds (JVM running for 5.19)
+2019-10-17 01:27:06.570  INFO 87625 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-17 01:27:06.570  INFO 87625 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-17 01:27:06.585  INFO 87625 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2019-10-17 01:27:06.679  INFO 87625 --- [http-nio-8080-exec-1] com.yufei.myblog.aspect.LogAspect        : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.yufei.myblog.web.IndexController.index', args=[]}
+2019-10-17 01:27:06.681  INFO 87625 --- [http-nio-8080-exec-1] com.yufei.myblog.aspect.LogAspect        : --------doAfter--------
+2019-10-17 01:27:06.681  INFO 87625 --- [http-nio-8080-exec-1] com.yufei.myblog.aspect.LogAspect        : Result : index
+2019-10-17 01:27:06.829 ERROR 87625 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "index": Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1372)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-10-17 01:27:06.837 ERROR 87625 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1372)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-10-17 01:30:25.449  INFO 87625 --- [Thread-12] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-17 01:30:25.450  INFO 87625 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 01:30:25.453  INFO 87625 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-17 01:30:25.456  INFO 87625 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-17 01:30:25.657  INFO 87625 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Starting MyblogApplication on Yufeis-MBP with PID 87625 (/Users/yufei/IdeaProjects/myblog/target/classes started by yufei in /Users/yufei/IdeaProjects/myblog)
+2019-10-17 01:30:25.657 DEBUG 87625 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-17 01:30:25.657  INFO 87625 --- [restartedMain] com.yufei.myblog.MyblogApplication       : The following profiles are active: dev
+2019-10-17 01:30:25.791  INFO 87625 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-17 01:30:25.793  INFO 87625 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
+2019-10-17 01:30:25.828  INFO 87625 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$458ce31] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 01:30:25.921  INFO 87625 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-17 01:30:25.921  INFO 87625 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-17 01:30:25.921  INFO 87625 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-17 01:30:25.928  INFO 87625 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-17 01:30:25.928  INFO 87625 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 269 ms
+2019-10-17 01:30:25.991  INFO 87625 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2019-10-17 01:30:26.000  INFO 87625 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2019-10-17 01:30:26.006  INFO 87625 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-17 01:30:26.010  INFO 87625 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-17 01:30:26.028  INFO 87625 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 01:30:26.060  INFO 87625 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-17 01:30:26.233  INFO 87625 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-17 01:30:26.250  WARN 87625 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-17 01:30:26.280  INFO 87625 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-17 01:30:26.440  INFO 87625 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-17 01:30:26.441  INFO 87625 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Started MyblogApplication in 0.835 seconds (JVM running for 215.454)
+2019-10-17 01:30:26.443  INFO 87625 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-17 01:30:30.720  INFO 87625 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-17 01:30:30.721  INFO 87625 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-17 01:30:30.729  INFO 87625 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-10-17 01:30:30.733  INFO 87625 --- [http-nio-8080-exec-1] com.yufei.myblog.aspect.LogAspect        : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.yufei.myblog.web.IndexController.index', args=[]}
+2019-10-17 01:30:30.735  INFO 87625 --- [http-nio-8080-exec-1] com.yufei.myblog.aspect.LogAspect        : --------doAfter--------
+2019-10-17 01:30:30.736  INFO 87625 --- [http-nio-8080-exec-1] com.yufei.myblog.aspect.LogAspect        : Result : index
+2019-10-17 01:33:22.986  INFO 87625 --- [http-nio-8080-exec-7] com.yufei.myblog.aspect.LogAspect        : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.yufei.myblog.web.IndexController.index', args=[]}
+2019-10-17 01:33:22.986  INFO 87625 --- [http-nio-8080-exec-7] com.yufei.myblog.aspect.LogAspect        : --------doAfter--------
+2019-10-17 01:33:22.986  INFO 87625 --- [http-nio-8080-exec-7] com.yufei.myblog.aspect.LogAspect        : Result : index
+2019-10-17 01:34:02.721  INFO 87625 --- [http-nio-8080-exec-3] com.yufei.myblog.aspect.LogAspect        : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.yufei.myblog.web.IndexController.index', args=[]}
+2019-10-17 01:34:02.722  INFO 87625 --- [http-nio-8080-exec-3] com.yufei.myblog.aspect.LogAspect        : --------doAfter--------
+2019-10-17 01:34:02.722  INFO 87625 --- [http-nio-8080-exec-3] com.yufei.myblog.aspect.LogAspect        : Result : index
+2019-10-17 01:35:42.349  INFO 87625 --- [http-nio-8080-exec-10] com.yufei.myblog.aspect.LogAspect        : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.yufei.myblog.web.IndexController.index', args=[]}
+2019-10-17 01:35:42.349  INFO 87625 --- [http-nio-8080-exec-10] com.yufei.myblog.aspect.LogAspect        : --------doAfter--------
+2019-10-17 01:35:42.349  INFO 87625 --- [http-nio-8080-exec-10] com.yufei.myblog.aspect.LogAspect        : Result : index
+2019-10-17 01:37:52.149  INFO 87625 --- [http-nio-8080-exec-5] com.yufei.myblog.aspect.LogAspect        : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.yufei.myblog.web.IndexController.index', args=[]}
+2019-10-17 01:37:52.149  INFO 87625 --- [http-nio-8080-exec-5] com.yufei.myblog.aspect.LogAspect        : --------doAfter--------
+2019-10-17 01:37:52.149  INFO 87625 --- [http-nio-8080-exec-5] com.yufei.myblog.aspect.LogAspect        : Result : index
+2019-10-17 01:38:56.381  INFO 87625 --- [http-nio-8080-exec-1] com.yufei.myblog.aspect.LogAspect        : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.yufei.myblog.web.IndexController.index', args=[]}
+2019-10-17 01:38:56.381  INFO 87625 --- [http-nio-8080-exec-1] com.yufei.myblog.aspect.LogAspect        : --------doAfter--------
+2019-10-17 01:38:56.381  INFO 87625 --- [http-nio-8080-exec-1] com.yufei.myblog.aspect.LogAspect        : Result : index
+2019-10-17 01:40:37.287  INFO 87625 --- [http-nio-8080-exec-9] com.yufei.myblog.aspect.LogAspect        : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.yufei.myblog.web.IndexController.index', args=[]}
+2019-10-17 01:40:37.287  INFO 87625 --- [http-nio-8080-exec-9] com.yufei.myblog.aspect.LogAspect        : --------doAfter--------
+2019-10-17 01:40:37.287  INFO 87625 --- [http-nio-8080-exec-9] com.yufei.myblog.aspect.LogAspect        : Result : index
+2019-10-17 01:45:10.659  INFO 87625 --- [Thread-27] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-17 01:45:10.660  INFO 87625 --- [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 01:45:10.661  INFO 87625 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2019-10-17 01:45:10.678  INFO 87625 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2019-10-17 01:45:13.069  INFO 87692 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Starting MyblogApplication on Yufeis-MBP with PID 87692 (/Users/yufei/IdeaProjects/myblog/target/classes started by yufei in /Users/yufei/IdeaProjects/myblog)
+2019-10-17 01:45:13.071 DEBUG 87692 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-17 01:45:13.071  INFO 87692 --- [restartedMain] com.yufei.myblog.MyblogApplication       : The following profiles are active: dev
+2019-10-17 01:45:13.135  INFO 87692 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-17 01:45:13.135  INFO 87692 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-17 01:45:13.619  INFO 87692 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-17 01:45:13.634  INFO 87692 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-10-17 01:45:13.915  INFO 87692 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5221c24f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-17 01:45:14.246  INFO 87692 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-17 01:45:14.264  INFO 87692 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-17 01:45:14.265  INFO 87692 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-17 01:45:14.335  INFO 87692 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-17 01:45:14.335  INFO 87692 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1200 ms
+2019-10-17 01:45:14.520  INFO 87692 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-17 01:45:14.752  INFO 87692 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-17 01:45:14.785  INFO 87692 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-17 01:45:14.817  INFO 87692 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.12.Final}
+2019-10-17 01:45:14.818  INFO 87692 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-17 01:45:14.894  INFO 87692 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-17 01:45:14.968  INFO 87692 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-17 01:45:15.109  INFO 87692 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 01:45:15.157  INFO 87692 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-17 01:45:15.445  INFO 87692 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-17 01:45:15.480  WARN 87692 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-17 01:45:15.519  INFO 87692 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-17 01:45:15.751  INFO 87692 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-17 01:45:15.754  INFO 87692 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Started MyblogApplication in 3.019 seconds (JVM running for 3.489)
+2019-10-17 01:45:22.495  INFO 87692 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-17 01:45:22.495  INFO 87692 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-17 01:45:22.504  INFO 87692 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-10-17 01:45:22.572  INFO 87692 --- [http-nio-8080-exec-1] com.yufei.myblog.aspect.LogAspect        : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.yufei.myblog.web.IndexController.index', args=[]}
+2019-10-17 01:45:22.574  INFO 87692 --- [http-nio-8080-exec-1] com.yufei.myblog.aspect.LogAspect        : --------doAfter--------
+2019-10-17 01:45:22.574  INFO 87692 --- [http-nio-8080-exec-1] com.yufei.myblog.aspect.LogAspect        : Result : index
+2019-10-17 01:47:11.866  INFO 87692 --- [http-nio-8080-exec-7] com.yufei.myblog.aspect.LogAspect        : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.yufei.myblog.web.IndexController.index', args=[]}
+2019-10-17 01:47:11.868  INFO 87692 --- [http-nio-8080-exec-7] com.yufei.myblog.aspect.LogAspect        : --------doAfter--------
+2019-10-17 01:47:11.868  INFO 87692 --- [http-nio-8080-exec-7] com.yufei.myblog.aspect.LogAspect        : Result : index
+2019-10-17 01:48:07.288  INFO 87692 --- [http-nio-8080-exec-2] com.yufei.myblog.aspect.LogAspect        : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.yufei.myblog.web.IndexController.index', args=[]}
+2019-10-17 01:48:07.289  INFO 87692 --- [http-nio-8080-exec-2] com.yufei.myblog.aspect.LogAspect        : --------doAfter--------
+2019-10-17 01:48:07.289  INFO 87692 --- [http-nio-8080-exec-2] com.yufei.myblog.aspect.LogAspect        : Result : index
+2019-10-17 01:52:07.588  INFO 87692 --- [http-nio-8080-exec-8] com.yufei.myblog.aspect.LogAspect        : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.yufei.myblog.web.IndexController.index', args=[]}
+2019-10-17 01:52:07.588  INFO 87692 --- [http-nio-8080-exec-8] com.yufei.myblog.aspect.LogAspect        : --------doAfter--------
+2019-10-17 01:52:07.589  INFO 87692 --- [http-nio-8080-exec-8] com.yufei.myblog.aspect.LogAspect        : Result : index
+2019-10-17 01:54:36.046  INFO 87692 --- [http-nio-8080-exec-6] com.yufei.myblog.aspect.LogAspect        : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.yufei.myblog.web.IndexController.index', args=[]}
+2019-10-17 01:54:36.049  INFO 87692 --- [http-nio-8080-exec-6] com.yufei.myblog.aspect.LogAspect        : --------doAfter--------
+2019-10-17 01:54:36.050  INFO 87692 --- [http-nio-8080-exec-6] com.yufei.myblog.aspect.LogAspect        : Result : index
+2019-10-17 01:59:19.086  INFO 87692 --- [http-nio-8080-exec-1] com.yufei.myblog.aspect.LogAspect        : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.yufei.myblog.web.IndexController.index', args=[]}
+2019-10-17 01:59:19.087  INFO 87692 --- [http-nio-8080-exec-1] com.yufei.myblog.aspect.LogAspect        : --------doAfter--------
+2019-10-17 01:59:19.087  INFO 87692 --- [http-nio-8080-exec-1] com.yufei.myblog.aspect.LogAspect        : Result : index
+2019-10-17 02:01:45.380  INFO 87692 --- [http-nio-8080-exec-7] com.yufei.myblog.aspect.LogAspect        : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.yufei.myblog.web.IndexController.index', args=[]}
+2019-10-17 02:01:45.380  INFO 87692 --- [http-nio-8080-exec-7] com.yufei.myblog.aspect.LogAspect        : --------doAfter--------
+2019-10-17 02:01:45.380  INFO 87692 --- [http-nio-8080-exec-7] com.yufei.myblog.aspect.LogAspect        : Result : index
+2019-10-17 02:02:16.367  INFO 87692 --- [http-nio-8080-exec-1] com.yufei.myblog.aspect.LogAspect        : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.yufei.myblog.web.IndexController.index', args=[]}
+2019-10-17 02:02:16.367  INFO 87692 --- [http-nio-8080-exec-1] com.yufei.myblog.aspect.LogAspect        : --------doAfter--------
+2019-10-17 02:02:16.368  INFO 87692 --- [http-nio-8080-exec-1] com.yufei.myblog.aspect.LogAspect        : Result : index
+2019-10-17 02:39:09.732  WARN 87692 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=36m24s701ms).
+2019-10-17 03:18:43.775  WARN 87692 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=39m34s56ms).
+2019-10-17 04:29:51.217  WARN 87692 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h10m6s788ms).
+2019-10-17 05:40:20.051  WARN 87692 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h9m58s825ms).
+2019-10-17 07:32:11.967  WARN 87692 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h51m21s902ms).
+2019-10-17 09:10:20.748  WARN 87692 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h37m38s778ms).
+2019-10-17 10:54:36.460  WARN 87692 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h44m15s712ms).
+2019-10-17 11:42:44.432  WARN 87692 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48m7s972ms).
+2019-10-17 11:58:01.426  WARN 87692 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m46s991ms).
+2019-10-17 12:02:11.045  WARN 87692 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m9s619ms).
+2019-10-17 12:06:27.494  WARN 87692 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m16s449ms).
+2019-10-17 12:12:33.161  WARN 87692 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m5s667ms).
+2019-10-17 12:13:07.015  INFO 87692 --- [Thread-14] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-17 12:13:07.016  INFO 87692 --- [Thread-14] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-17 12:13:07.027  INFO 87692 --- [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-17 12:13:07.033  INFO 87692 --- [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

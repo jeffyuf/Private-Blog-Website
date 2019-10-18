@@ -1,0 +1,130 @@
+2019-10-18 01:21:36.549  INFO 88203 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Starting MyblogApplication on Yufeis-MBP with PID 88203 (/Users/yufei/IdeaProjects/myblog/target/classes started by yufei in /Users/yufei/IdeaProjects/myblog)
+2019-10-18 01:21:36.553 DEBUG 88203 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-18 01:21:36.553  INFO 88203 --- [restartedMain] com.yufei.myblog.MyblogApplication       : The following profiles are active: dev
+2019-10-18 01:21:36.594  INFO 88203 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-18 01:21:36.595  INFO 88203 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-18 01:21:37.160  INFO 88203 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-18 01:21:37.176  INFO 88203 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-10-18 01:21:37.491  INFO 88203 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f4f7a249] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-18 01:21:37.901  INFO 88203 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-18 01:21:37.923  INFO 88203 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-18 01:21:37.923  INFO 88203 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-18 01:21:38.013  INFO 88203 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-18 01:21:38.013  INFO 88203 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1418 ms
+2019-10-18 01:21:38.231  INFO 88203 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-18 01:21:38.532  INFO 88203 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-18 01:21:38.585  INFO 88203 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-18 01:21:38.662  INFO 88203 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.12.Final}
+2019-10-18 01:21:38.663  INFO 88203 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-18 01:21:38.813  INFO 88203 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-18 01:21:38.929  INFO 88203 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-18 01:21:39.130  INFO 88203 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-18 01:21:39.182  INFO 88203 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-18 01:21:39.486  INFO 88203 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-18 01:21:39.525  WARN 88203 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-18 01:21:39.564  INFO 88203 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-18 01:21:39.841  INFO 88203 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-18 01:21:39.845  INFO 88203 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Started MyblogApplication in 3.679 seconds (JVM running for 4.227)
+2019-10-18 01:21:46.004  INFO 88203 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-18 01:21:46.004  INFO 88203 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-18 01:21:46.013  INFO 88203 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-10-18 01:21:46.109  INFO 88203 --- [http-nio-8080-exec-1] com.yufei.myblog.aspect.LogAspect        : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.yufei.myblog.web.IndexController.index', args=[]}
+2019-10-18 01:21:46.113  INFO 88203 --- [http-nio-8080-exec-1] com.yufei.myblog.aspect.LogAspect        : --------doAfter--------
+2019-10-18 01:21:46.113  INFO 88203 --- [http-nio-8080-exec-1] com.yufei.myblog.aspect.LogAspect        : Result : index
+2019-10-18 01:24:26.351  INFO 88203 --- [http-nio-8080-exec-7] com.yufei.myblog.aspect.LogAspect        : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.yufei.myblog.web.IndexController.index', args=[]}
+2019-10-18 01:24:26.352  INFO 88203 --- [http-nio-8080-exec-7] com.yufei.myblog.aspect.LogAspect        : --------doAfter--------
+2019-10-18 01:24:26.352  INFO 88203 --- [http-nio-8080-exec-7] com.yufei.myblog.aspect.LogAspect        : Result : index
+2019-10-18 01:31:38.840  INFO 88203 --- [http-nio-8080-exec-2] com.yufei.myblog.aspect.LogAspect        : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.yufei.myblog.web.IndexController.index', args=[]}
+2019-10-18 01:31:38.841  INFO 88203 --- [http-nio-8080-exec-2] com.yufei.myblog.aspect.LogAspect        : --------doAfter--------
+2019-10-18 01:31:38.841  INFO 88203 --- [http-nio-8080-exec-2] com.yufei.myblog.aspect.LogAspect        : Result : index
+2019-10-18 01:32:07.786  INFO 88203 --- [http-nio-8080-exec-7] com.yufei.myblog.aspect.LogAspect        : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.yufei.myblog.web.IndexController.index', args=[]}
+2019-10-18 01:32:07.786  INFO 88203 --- [http-nio-8080-exec-7] com.yufei.myblog.aspect.LogAspect        : --------doAfter--------
+2019-10-18 01:32:07.786  INFO 88203 --- [http-nio-8080-exec-7] com.yufei.myblog.aspect.LogAspect        : Result : index
+2019-10-18 01:37:03.535  INFO 88203 --- [http-nio-8080-exec-2] com.yufei.myblog.aspect.LogAspect        : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.yufei.myblog.web.IndexController.index', args=[]}
+2019-10-18 01:37:03.536  INFO 88203 --- [http-nio-8080-exec-2] com.yufei.myblog.aspect.LogAspect        : --------doAfter--------
+2019-10-18 01:37:03.536  INFO 88203 --- [http-nio-8080-exec-2] com.yufei.myblog.aspect.LogAspect        : Result : index
+2019-10-18 01:51:34.684  INFO 88203 --- [Thread-16] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-18 01:51:34.690  INFO 88203 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-18 01:51:34.713  INFO 88203 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-18 01:51:34.719  INFO 88203 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-18 01:51:37.307  INFO 88382 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Starting MyblogApplication on Yufeis-MBP with PID 88382 (/Users/yufei/IdeaProjects/myblog/target/classes started by yufei in /Users/yufei/IdeaProjects/myblog)
+2019-10-18 01:51:37.309 DEBUG 88382 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-18 01:51:37.309  INFO 88382 --- [restartedMain] com.yufei.myblog.MyblogApplication       : The following profiles are active: dev
+2019-10-18 01:51:37.388  INFO 88382 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-18 01:51:37.389  INFO 88382 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-18 01:51:37.875  INFO 88382 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-18 01:51:37.890  INFO 88382 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-10-18 01:51:38.166  INFO 88382 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f23e428] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-18 01:51:38.510  INFO 88382 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-18 01:51:38.532  INFO 88382 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-18 01:51:38.532  INFO 88382 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-18 01:51:38.608  INFO 88382 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-18 01:51:38.608  INFO 88382 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1219 ms
+2019-10-18 01:51:38.789  INFO 88382 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-18 01:51:39.014  INFO 88382 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-18 01:51:39.048  INFO 88382 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-18 01:51:39.080  INFO 88382 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.12.Final}
+2019-10-18 01:51:39.081  INFO 88382 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-18 01:51:39.151  INFO 88382 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-18 01:51:39.229  INFO 88382 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-18 01:51:39.403  INFO 88382 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-18 01:51:39.457  INFO 88382 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-18 01:51:39.742  INFO 88382 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-18 01:51:39.778  WARN 88382 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-18 01:51:39.817  INFO 88382 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-18 01:51:40.045  INFO 88382 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-18 01:51:40.048  INFO 88382 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Started MyblogApplication in 3.128 seconds (JVM running for 3.627)
+2019-10-18 01:51:51.900  INFO 88382 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-18 01:51:51.901  INFO 88382 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-18 01:51:51.910  INFO 88382 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-10-18 01:51:51.976  INFO 88382 --- [http-nio-8080-exec-1] com.yufei.myblog.aspect.LogAspect        : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.yufei.myblog.web.IndexController.index', args=[]}
+2019-10-18 01:51:51.978  INFO 88382 --- [http-nio-8080-exec-1] com.yufei.myblog.aspect.LogAspect        : --------doAfter--------
+2019-10-18 01:51:51.978  INFO 88382 --- [http-nio-8080-exec-1] com.yufei.myblog.aspect.LogAspect        : Result : index
+2019-10-18 01:52:58.820  INFO 88382 --- [http-nio-8080-exec-7] com.yufei.myblog.aspect.LogAspect        : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.yufei.myblog.web.IndexController.index', args=[]}
+2019-10-18 01:52:58.820  INFO 88382 --- [http-nio-8080-exec-7] com.yufei.myblog.aspect.LogAspect        : --------doAfter--------
+2019-10-18 01:52:58.820  INFO 88382 --- [http-nio-8080-exec-7] com.yufei.myblog.aspect.LogAspect        : Result : index
+2019-10-18 01:55:58.212  INFO 88382 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-18 01:55:58.213  INFO 88382 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-18 01:55:58.217  INFO 88382 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-18 01:55:58.220  INFO 88382 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-18 01:55:58.452  INFO 88382 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Starting MyblogApplication on Yufeis-MBP with PID 88382 (/Users/yufei/IdeaProjects/myblog/target/classes started by yufei in /Users/yufei/IdeaProjects/myblog)
+2019-10-18 01:55:58.453 DEBUG 88382 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-18 01:55:58.453  INFO 88382 --- [restartedMain] com.yufei.myblog.MyblogApplication       : The following profiles are active: dev
+2019-10-18 01:55:58.583  INFO 88382 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-18 01:55:58.585  INFO 88382 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
+2019-10-18 01:55:58.622  INFO 88382 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f23e428] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-18 01:55:58.731  INFO 88382 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-18 01:55:58.738  INFO 88382 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-18 01:55:58.738  INFO 88382 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-18 01:55:58.748  INFO 88382 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-18 01:55:58.748  INFO 88382 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 293 ms
+2019-10-18 01:55:58.814  INFO 88382 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2019-10-18 01:55:58.828  INFO 88382 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2019-10-18 01:55:58.835  INFO 88382 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-18 01:55:58.839  INFO 88382 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-18 01:55:58.855  INFO 88382 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-18 01:55:58.886  INFO 88382 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-18 01:55:59.073  INFO 88382 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-18 01:55:59.088  WARN 88382 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-18 01:55:59.114  INFO 88382 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-18 01:55:59.266  INFO 88382 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-18 01:55:59.266  INFO 88382 --- [restartedMain] com.yufei.myblog.MyblogApplication       : Started MyblogApplication in 0.872 seconds (JVM running for 262.848)
+2019-10-18 01:55:59.268  INFO 88382 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-10-18 01:56:19.134  INFO 88382 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-18 01:56:19.135  INFO 88382 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-18 01:56:19.145  INFO 88382 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-10-18 01:56:19.149  INFO 88382 --- [http-nio-8080-exec-1] com.yufei.myblog.aspect.LogAspect        : Request : RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.yufei.myblog.web.IndexController.index', args=[]}
+2019-10-18 01:56:19.152  INFO 88382 --- [http-nio-8080-exec-1] com.yufei.myblog.aspect.LogAspect        : --------doAfter--------
+2019-10-18 01:56:19.153  INFO 88382 --- [http-nio-8080-exec-1] com.yufei.myblog.aspect.LogAspect        : Result : index
+2019-10-18 03:57:25.199  WARN 88382 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=2h26s261ms).
+2019-10-18 07:57:52.623  WARN 88382 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=4h27s425ms).
+2019-10-18 09:06:43.268  INFO 88382 --- [Thread-25] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-18 09:06:43.268  INFO 88382 --- [Thread-25] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-18 09:06:43.269  INFO 88382 --- [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2019-10-18 09:06:43.276  INFO 88382 --- [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.

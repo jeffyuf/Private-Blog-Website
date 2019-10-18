@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/mySettings.css">
+</head>
+<body>
+
+    <!--导航-->
+    <nav class="ui inverted attached segment navigation-padded-tb-mini my-shadow-small">
+        <div class="ui container">
+            <div class="ui inverted stackable menu">
+                <h2 class="ui teal header item">My Blog</h2>
+                <a href="#" class="menu-item item mobile-hide"><i class="home icon"></i>首页</a>
+                <a href="#" class="menu-item item mobile-hide"><i class="idea icon"></i>分类</a>
+                <a href="#" class="menu-item item mobile-hide"><i class="tags icon"></i>标签</a>
+                <a href="#" class="menu-item item mobile-hide"><i class="clone icon"></i>归档</a>
+                <a href="#" class="active menu-item item mobile-hide"><i class="info icon"></i>关于我</a>
+
+                <div class="right menu-item item mobile-hide">
+                    <div class="ui icon inverted transparent input">
+                        <input type="text" placeholder="Search......">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="ui menu toggle black icon button menu-right-top-button mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+
+    <!--中间内容-->
+    <div class="my-container my-padded-tb-big">
+        <div class="ui container">
+            <div class="ui stackable grid">
+                <div class="eleven wide column">
+                    <div class="ui segment">
+                        <img src="https://picsum.photos/id/1005/800/600" alt="" class="ui rounded image">
+                    </div>
+                </div>
+                <div class="five wide column">
+                    <div class="ui top attached segment">
+                        <div class="ui header">关于我</div>
+                    </div>
+                    <div class="ui attached segment">
+                        <p class="my-text-style">只吃饭不洗碗，一个独立开发者，热衷于在0与1的世界折腾，愿意接触任何有意思的新技术</p>
+                        <p class="my-text-style">只吃饭不洗碗，一个独立开发者，热衷于在0与1的世界折腾，愿意接触任何有意思的新技术</p>
+                    </div>
+                    <div class="ui attached segment">
+                        <div class="ui orange basic label content-margin-tb-tiny">Coding</div>
+                        <div class="ui orange basic label content-margin-tb-tiny">Writing</div>
+                        <div class="ui orange basic label content-margin-tb-tiny">Thinking</div>
+                        <div class="ui orange basic label content-margin-tb-tiny">Soccer</div>
+                    </div>
+                    <div class="ui attached segment">
+                        <div class="ui teal basic label content-margin-tb-tiny">Java</div>
+                        <div class="ui teal basic label content-margin-tb-tiny">JavaScript</div>
+                        <div class="ui teal basic label content-margin-tb-tiny">Node</div>
+                        <div class="ui teal basic label content-margin-tb-tiny">Redis</div>
+                        <div class="ui teal basic label content-margin-tb-tiny">MySQL</div>
+                        <div class="ui teal basic label content-margin-tb-tiny">Spring</div>
+                    </div>
+                    <div class="ui bottom attached segment">
+                        <a href="#" class="ui circular icon button"><i class="github icon"></i></a>
+                        <a href="#" class="ui wechat circular icon button"><i class="wechat icon"></i></a>
+                        <a href="#" class="ui gmail circular icon button" data-content="jeffyufeiwang@gmail.com" data-position="bottom center"><i class="mail icon"></i></a>
+                        <a href="#" class="ui qq circular icon button" data-content="958379243" data-position="bottom center"><i class="qq icon"></i></a>
+                    </div>
+
+                    <div class="ui wechatQR flowing popup transition hidden" style="width: 120px">
+                        <img src="../static/images/wechat.jpg" alt="" class="ui rounded image" style="width: 120px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--底部footer-->
+    <footer class="ui inverted segment vertical my-padded-tb-massive">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img src="../static/images/wechat.jpg" class="ui rounded image" alt="" style="width: 110px">
+                        </div>
+                    </div>
+                </div>
+                <div class="four wide column">
+                    <h4 class="ui inverted header">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">用户故事(User Story)</a>
+                        <a href="#" class="item">用户故事(User Story)</a>
+                        <a href="#" class="item">用户故事(User Story)</a>
+                    </div>
+                </div>
+                <div class="four wide column">
+                    <h4 class="ui inverted header">联系我</h4>
+                    <div class="ui inverted link list">
+                        <p>Email: yffwan@ucdavis.edu</p>
+                    </div>
+                </div>
+                <div class="five wide column">
+                    <h4 class="ui inverted header">关于我</h4>
+                    <p>这是我的个人博客，会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助......</p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="my-text-thin my-text-spaced my-opacity-tiny">Copyright © 2019-2020 Yufei Designed by Yufei</p>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script>
+        $('.menu.toggle').click(function() {
+            $('.menu-item').toggleClass('mobile-hide');
+        });
+
+        $('.qq').popup();
+
+        $('.gmail').popup();
+
+        $('.wechat').popup({
+            popup : $('.wechatQR.popup'),
+            position : 'bottom center'
+        });
+    </script>
+</body>
+</html>
