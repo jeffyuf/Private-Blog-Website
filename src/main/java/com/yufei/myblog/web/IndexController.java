@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 @Controller
 public class IndexController {
 
-    @GetMapping(value="/")
+    @GetMapping("/")
     public String index() {
         //int i = 9/0;
         //String blog = null;
@@ -21,5 +21,10 @@ public class IndexController {
         //}
         // System.out.println("----------index----------");
         return "index";
+    }
+
+    @GetMapping("/blog")
+    public String blog() {
+        return "blog";
     }
 }

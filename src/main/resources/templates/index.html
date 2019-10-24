@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-<head>
+<head th:replace="_fragments :: head(~{::title})">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-    <link rel="stylesheet" href="../static/css/mySettings.css" th:href="@{/css/mySettings.css}">
+    <link rel="stylesheet" href="../static/css/mySettings.css">
 </head>
 <body>
 
     <!--导航-->
-    <nav class="ui inverted attached segment navigation-padded-tb-mini my-shadow-small">
+    <nav th:replace="_fragments :: menu(1)" class="ui inverted attached segment navigation-padded-tb-mini my-shadow-small">
         <div class="ui container">
             <div class="ui inverted stackable menu">
                 <h2 class="ui teal header item">My Blog</h2>
-                <a href="#" class="active menu-item item mobile-hide"><i class="home icon"></i>Home</a>
+                <a href="#" class="menu-item item mobile-hide"><i class="home icon"></i>Home</a>
                 <a href="#" class="menu-item item mobile-hide"><i class="idea icon"></i>Category</a>
                 <a href="#" class="menu-item item mobile-hide"><i class="tags icon"></i>Tag</a>
                 <a href="#" class="menu-item item mobile-hide"><i class="clone icon"></i>Archive</a>
@@ -445,7 +445,7 @@
     </div>
 
     <!--底部footer-->
-    <footer class="ui inverted segment vertical my-padded-tb-massive">
+    <footer th:replace="_fragments :: footer" class="ui inverted segment vertical my-padded-tb-massive">
         <div class="ui center aligned container">
             <div class="ui inverted divided stackable grid">
                 <div class="three wide column">
@@ -479,8 +479,12 @@
         </div>
     </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+    <!--/*/<th:block th:replace="_fragments :: script">/*/-->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <!--/*/</th:block>/*/-->
+
     <script>
         $('.menu.toggle').click(function() {
             $('.menu-item').toggleClass('mobile-hide');
